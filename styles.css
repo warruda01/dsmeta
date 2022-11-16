@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/*linha acima. importado do google fonts. pesquisa a fonte, escolhe os pesos , 
+use o @import, copia e cola*/
+
+* { /* *significa que qualque referencia a fonte*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /*ver video para funcionamento*/
+    margin: 0; /*por padrao, a margem sera zero, interno e externo (padding)*/
+    padding: 0;
+} 
+body, html {
+    background-color: #000; /*cor de fundo*/
+    color: #FFFF;           /*cor da letra do titulo*/
+}
+
+a/*TAG a - @devsuperior*/, a:hover /*passa o mouse em cima*/, a:visited /*quando ja foi visitado*/
+{                                 
+    color:unset; /*sem formatacao inicial*/
+    text-decoration: none;
+}
+
+header{ /*cabecalho*/
+    background: linear-gradient(180deg, #102347 0%, #181818 100%); /*copiado do projeto e colado*/
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dsmeta-logo-container { /*como trata-se de uma classe, usa o ponto para estilizar*/
+    display: flex;
+    flex-direction: column; /*um em baixo do outro*/
+    align-items: center; /* alinha ao centro*/
+
+}
+
+.dsmeta-logo-container img{ /*referindo-se a TAG img q esta dentro dessa classe tera essas propriedade*/
+    width: 235px;
+    height: 106.07px;
+
+}
+
+.dsmeta-logo-container h1{ /*referindo-se ao titulo*/
+
+    margin-top: 14.73px; /*refere-se a distancia entre o logo e o titulo*/
+    font-size: 24px; 
+    font-weight: 700; /*peso da fonte*/
+}
+
+.dsmeta-logo-container p{
+
+    
+    font-size: 14px; 
+    font-weight: 300; /*peso da fonte*/
+}
+
+.dsmeta-card{
+    background-color: #283142; /*cor de fundo do card do ret*/
+    border-radius: 10px;
+}
+
+.dsmeta-container{
+    width: 100%; /*padrao da largura*/
+    max-width: 900px; /*largura maxima*/
+    margin:0 auto; /*para ainhar o div ao centro*/
+}
+
+#sales { /*para chamar uma ID, usa #*/
+
+    padding: 40px 10px; /*espacamento 40 vertical, 10 laterais*/
+}
