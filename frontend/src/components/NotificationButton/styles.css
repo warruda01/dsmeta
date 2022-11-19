@@ -1,0 +1,21 @@
+.dsmeta-red-btn {
+    /*classe para o botao*/
+
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;    /* alinhamento ao centro*/
+    align-items: center;    /* alinhamento ao centro*/
+    justify-content: center;    /* alinhamento ao centro*/
+    cursor: pointer;     /*passando o mouse vira*/
+
+}
+
+.dsmeta-red-btn img {
+    /*imagem dentro do botao*/
+
+    width: 19px;
+    height: 21.34px;
+}
