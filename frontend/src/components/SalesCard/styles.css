@@ -1,0 +1,141 @@
+.dsmeta-card {
+    background-color: #283142;
+    /*cor de fundo do card do ret*/
+    border-radius: 10px;
+    /*arredondamento da borda*/
+    padding: 30px 10px;
+    /*espacamento superior e lateral*/
+
+}
+
+.dsmeta-sales-title {
+    /* titulo de Vendas*/
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dsmeta-form-control {
+    /*formatacao das caixinhas de data*/
+
+    width: 100%;
+    height: 46px;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9AAABE;
+    padding: 0 20px;
+    /*espacamento da letra, altura, lateral*/
+    font-size: 18px;
+
+}
+
+.dsmeta-form-control-container {
+
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.dsmeta-sales-table {
+
+    width: 100%;
+    /*distribui a tabela por todo o espaco do container*/
+    border-spacing: 0;
+    /*elimina o espaco entre as linhas da tabela*/
+    border-collapse: collapse;
+    /*para aparecer a linha superior das linhas*/
+
+}
+
+.dsmeta-sales-table thead {
+    /*cabecalho da tabela tera a seguinte formatacao*/
+
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+
+
+}
+
+.dsmeta-sales-table tbody {
+    /*preenchimento das linhas da tabela*/
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+
+}
+
+.dsmeta-sales-table tbody tr {
+
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+    /* cor da linha larga*/
+
+}
+
+.dsmeta-sales-table tbody tr:hover>td {
+    /*passar o mouse em cima, >td soh de passar em cima, fara efeito*/
+
+
+    background-color: #384459
+}
+
+.dsmeta-sales-table tbody tr:nth-child(odd) {
+    /*linha filha impar do tr, para contraste de cor*/
+
+
+    background-color: #242C3B;
+}
+
+.dsmeta-red-btn-container {
+    /*classe para centralizar o botao*/
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.show576 {
+
+    display: none;
+    /*para de mostrar a data */
+}
+
+.show992 {
+
+    display: none;
+    /*para de mostrar a ID */
+}
+
+@media (min-width: 576px) {
+
+    /*mostrara a data a partir de 576px*/
+    .show576 {
+        display: table-cell;
+    }
+
+    .dsmeta-card {
+
+        padding: 35px;
+    }
+
+    .dsmeta-sales-table tbody tr {
+        height: 55px;
+
+    }
+
+    .dsmeta-sales-table tbody {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /*mostrara a ID a partir de 992px*/
+    .show992 {
+        display: table-cell;
+    }
+}
